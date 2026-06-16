@@ -78,32 +78,48 @@ The story is split into focused documents — each one self-contained, ~150–30
 
 ## 💼 Career timeline
 
-### 🧱 New analytics platform · Senior backend & platform engineer
-**End of December 2025 – present** · main current engagement · **super small AI-first team**
+### 🧱 Stealth Startup (Malta) · Senior backend & platform engineer · Contract
+**End of December 2025 – present** · **main current engagement** · **super small AI-first team** · remote from Israel
 
-Designing and shipping a new marketing & SEO analytics platform for the gaming vertical, from scratch. **Go + Rust microservice platform** that augments and progressively replaces an existing PHP / Symfony monolith.
+A Malta-based stealth startup. **Marketing & SEO analytics in the gaming vertical.** This is the engagement I spend the majority of my time on right now — designing and shipping a new Go + Rust microservice platform from scratch, in a team that is two engineers small and AI-first by design.
 
-The PHP monolith we're building on top of is **not a tangled legacy**. It is a **clean, domain-driven Symfony codebase** — well-modularised, best-practices applied, the kind of monolith that actually deserves to live. The reason we're migrating hot paths to Go and Rust is **resource efficiency** (memory, image size, per-request overhead), not code quality.
+> ⚙️ **What I'm building** — a polyrepo distributed system that augments and progressively replaces a clean, domain-driven PHP / Symfony monolith. The monolith is not a tangled legacy: it is a well-modularised, best-practices Symfony codebase, the kind of monolith that actually deserves to live. The migration to Go and Rust is for **resource efficiency** (memory, image size, framework overhead), **not code quality**.
 
-What I've built and shipped in 6.5 months:
+**What I've personally designed and shipped in 6.5 months:**
 
-- A **Go platform library** every new service imports — resource lifecycle, gRPC / HTTP / Postgres / NATS / RabbitMQ / Redis wrappers, Postgres outbox, observability, Snowflake IDs, structured logging, `testcontainers-go` integration-test harness.
-- A **Rust sidecar** (~3 MB static binary) replacing supervisord inside PHP containers — drop-in for existing supervisord configs.
+- A **Go platform library** every new service imports — resource lifecycle, gRPC / HTTP / Postgres / NATS / RabbitMQ / Redis wrappers, Postgres outbox, observability, Snowflake IDs, structured logging, `testcontainers-go` integration-test harness. Defines *one way* to do everything.
+- A **Rust sidecar** (~3 MB static musl binary) replacing supervisord inside PHP containers — drop-in for existing supervisord configs, **~17× reduction** in process-manager footprint vs the old Python supervisord (~50 MB).
 - A **Go control-plane registry** for cross-replica service discovery and proxied admin API (mutual Ed25519, push + pull heartbeat).
 - **Six bounded contexts already extracted from the PHP monolith** — content scraping, domain-rule mapping, dictionary replica, gateway, AI assistant, BFF/admin API. Each domain runs as one or more Go microservices (server + worker + supporting processes); the total binary count is higher than six.
-- A **Go BFF + React (Mantine + Refine) admin** — the operational control plane for the whole stack.
-- **Stack:** Go · Rust · PHP / Symfony · PostgreSQL · gRPC · NATS · RabbitMQ · Redis · BigQuery · React + TypeScript · Docker · GCP · GitHub Actions · Prometheus + Grafana.
+- A **Go BFF + React (Mantine + Refine) admin panel** — the operational control plane for the whole stack (RBAC, audit, soft-vs-hard delete, structured operations workflows).
+- A **shared Protocol Buffers schema repo** — single source of truth for all gRPC contracts; generated stubs for Go and PHP.
+- **CI / CD** across 20+ repos: GitHub Actions self-hosted runners, coverage gates per package, binary-size badges, image-size badges, version badges.
 
-The team is tiny. The codebase is large and growing fast. Discipline and AI tooling are the only reasons that works — see [`docs/ai-engineering.md`](docs/ai-engineering.md).
+**Stack:** Go · Rust · PHP / Symfony · PostgreSQL · gRPC · NATS · RabbitMQ · Redis · BigQuery · React + TypeScript · Docker · GCP · GitHub Actions · Prometheus + Grafana.
+
+**Quality discipline that makes the speed honest:**
+
+- Interface-driven Go, OOP, one struct per file, max 100 lines per file.
+- `errors.Is` / `errors.As` only — never direct comparison or type switch.
+- Forward-only migrations, Snowflake IDs everywhere, `COMMENT ON COLUMN` required.
+- **90 %+ test coverage floor enforced in CI**; real integration tests against real Postgres / NATS / RabbitMQ in `testcontainers-go` — never mocks for infrastructure.
+- No flaky-test culture; per-driver Prometheus metrics; structured zap logs; observability baked into the platform library, not bolted on.
+- All of the above is **codified in per-repo `CLAUDE.md` files and enforced by `PreToolUse` / `PostToolUse` hooks** — AI cannot drift, humans cannot forget.
+
+**Team & throughput.** The team is tiny. The codebase is large and growing fast. **6,300+ commits, 3.4 M lines of source authored in 6 months, ~32 commits / day.** The discipline above is the reason that volume doesn't become technical debt. See [`docs/ai-engineering.md`](docs/ai-engineering.md) for the AI-augmented engineering practices and [`docs/quality-standards.md`](docs/quality-standards.md) for the full quality rule-book.
+
+---
 
 ### 🛠 Freelance / Product consulting · Data architect & BigQuery expert
-**Sep 2023 – present** · ongoing (reduced) · with [Natan Kreiderman](https://www.linkedin.com/in/natan-kreiderman/)
+**Sep 2023 – present** · ongoing in a *reduced* capacity, alongside the Stealth Startup engagement above · with [Natan Kreiderman](https://www.linkedin.com/in/natan-kreiderman/)
 
-Marketing analytics and SaaS backends. Still active in a smaller capacity alongside the main engagement above.
+A separate, smaller consulting track. Marketing analytics and SaaS backends — primarily on the data layer.
 
 - Designed a systematic SQL & data layer in **BigQuery** — **up to 10× cloud cost reduction** for the client.
 - Accelerated client launch workflow from **1–2 hours down to 15 minutes**.
 - Designing a SaaS backend that replaces Make / Zapier glue with a real engineered system.
+
+> Distinct engagement, distinct client, distinct codebase — *not* the Stealth Startup work above.
 
 ### 🚀 Seowork · Co-founder & CTO
 **Jun 2013 – Aug 2021** · 8 years · **successful exit**
