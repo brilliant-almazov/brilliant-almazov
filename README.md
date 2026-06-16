@@ -26,13 +26,12 @@
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=brilliant-almazov&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true" alt="stats" height="160" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=brilliant-almazov&layout=compact&theme=tokyonight&hide=html,css,scss,roff&hide_border=true" alt="top langs" height="160" />
+  <img src="https://streak-stats.demolab.com/?user=brilliant-almazov&theme=tokyonight&hide_border=true&date_format=j%20M%5B%20Y%5D" alt="streak" height="180" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=brilliant-almazov&layout=compact&theme=tokyonight&hide=html,css,scss,roff,swift,shell,javascript&exclude_repo=pinger,pinger-dirty,bartender,coursera-react-basics,coursera-html-and-css-in-depth&hide_border=true&langs_count=8" alt="top langs" height="180" />
 </p>
 
-<p align="center">
-  <img src="https://streak-stats.demolab.com/?user=brilliant-almazov&theme=tokyonight&hide_border=true" alt="streak" height="160" />
-</p>
+> **Headline numbers (Dec 2025 → Jun 2026, 6.5 months):**
+> 🗂 **22 active repositories** · 📝 **6,300+ commits** · ➕ **~3.4 M lines of source** · ⏱ **~32 commits / day** · 🚀 **6 Go microservices in production** · 📦 **3 public OSS libraries shipped**.
 
 ---
 
@@ -47,8 +46,7 @@ The team is small. The team is AI-first. The bar is high.
 - A **Go control-plane registry** — single writer, mutual Ed25519 auth, push + pull heartbeat, reverse-proxy admin API across replicas.
 - **Six Go microservices in production** — content scraping, domain-rule mapping, dictionary replica, gateway, AI assistant, admin BFF. Each replaces a slice of the PHP monolith and drops resident memory from **100+ MB per PHP worker (a typical Symfony daemon sits around ~150 MB) to ~20 MB per Go binary**.
 
-> Headline numbers: **22 active repositories · 6,300+ commits · ~3.4 M lines of source authored in 6.5 months · ~32 commits / day**.
-> Detail in [`docs/ai-engineering.md`](docs/ai-engineering.md).
+> Detail on AI-augmented workflow + per-repo activity: [`docs/ai-engineering.md`](docs/ai-engineering.md).
 
 ---
 
