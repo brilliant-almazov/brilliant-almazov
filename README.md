@@ -31,7 +31,7 @@
 
 ### 📊 Real language breakdown (private + public, Dec 2025 → Jun 2026)
 
-GitHub's top-langs card only counts *public* repositories — which under-represents PHP (the legacy monolith is private) and over-represents Rust (where the open-source projects live). The honest distribution, measured across **all** active repos by net source LOC, is:
+GitHub's top-langs card only counts *public* repositories — which under-represents PHP (the production Symfony monolith is private) and over-represents Rust (where the open-source projects live). The honest distribution, measured across **all** active repos by net source LOC, is:
 
 | Language | Share | |
 |---|---:|---|
@@ -78,15 +78,32 @@ The story is split into focused documents — each one self-contained, ~150–30
 
 ## 💼 Career timeline
 
-### 🛠 Freelance / Product consulting · Data architect & BigQuery expert
-**Sep 2023 – present** · with [Natan Kreiderman](https://www.linkedin.com/in/natan-kreiderman/)
+### 🧱 New analytics platform · Senior backend & platform engineer
+**End of December 2025 – present** · main current engagement · **super small AI-first team**
 
-Marketing analytics and SaaS backends for the gaming industry. Started as BigQuery and data-layer consulting; since **December 2025**, designing and shipping the full microservice platform described above.
+Designing and shipping a new marketing & SEO analytics platform for the gaming vertical, from scratch. **Go + Rust microservice platform** that augments and progressively replaces an existing PHP / Symfony monolith.
+
+The PHP monolith we're building on top of is **not a tangled legacy**. It is a **clean, domain-driven Symfony codebase** — well-modularised, best-practices applied, the kind of monolith that actually deserves to live. The reason we're migrating hot paths to Go and Rust is **resource efficiency** (memory, image size, per-request overhead), not code quality.
+
+What I've built and shipped in 6.5 months:
+
+- A **Go platform library** every new service imports — resource lifecycle, gRPC / HTTP / Postgres / NATS / RabbitMQ / Redis wrappers, Postgres outbox, observability, Snowflake IDs, structured logging, `testcontainers-go` integration-test harness.
+- A **Rust sidecar** (~3 MB static binary) replacing supervisord inside PHP containers — drop-in for existing supervisord configs.
+- A **Go control-plane registry** for cross-replica service discovery and proxied admin API (mutual Ed25519, push + pull heartbeat).
+- **Six Go microservices in production** — content scraping, domain-rule mapping, dictionary replica, gateway, AI assistant, BFF/admin API.
+- A **Go BFF + React (Mantine + Refine) admin** — the operational control plane for the whole stack.
+- **Stack:** Go · Rust · PHP / Symfony · PostgreSQL · gRPC · NATS · RabbitMQ · Redis · BigQuery · React + TypeScript · Docker · GCP · GitHub Actions · Prometheus + Grafana.
+
+The team is tiny. The codebase is large and growing fast. Discipline and AI tooling are the only reasons that works — see [`docs/ai-engineering.md`](docs/ai-engineering.md).
+
+### 🛠 Freelance / Product consulting · Data architect & BigQuery expert
+**Sep 2023 – present** · ongoing (reduced) · with [Natan Kreiderman](https://www.linkedin.com/in/natan-kreiderman/)
+
+Marketing analytics and SaaS backends. Still active in a smaller capacity alongside the main engagement above.
 
 - Designed a systematic SQL & data layer in **BigQuery** — **up to 10× cloud cost reduction** for the client.
 - Accelerated client launch workflow from **1–2 hours down to 15 minutes**.
 - Designing a SaaS backend that replaces Make / Zapier glue with a real engineered system.
-- Built the Go platform library, the Rust sidecar, the Go registry and six production Go services from scratch.
 
 ### 🚀 Seowork · Co-founder & CTO
 **Jun 2013 – Aug 2021** · 8 years · **successful exit**

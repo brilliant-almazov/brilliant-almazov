@@ -83,7 +83,7 @@ These are *real* costs. They buy independent evolution of domains, independent d
 
 ### Where we are
 
-Across the legacy PHP monolith, six distinct worker patterns live, hand-coded in slightly different shapes:
+Across the existing PHP / Symfony monolith, six distinct worker patterns live, hand-coded in slightly different shapes:
 
 | Pattern | What it does |
 |---|---|

@@ -1,20 +1,22 @@
 # PHP → Go migration
 
-> **The legacy is a multi-million-LOC PHP / Symfony monolith.** It works. It's also expensive. We're peeling it apart, service by service, into Go microservices on top of the [platform](./platform.md).
+> **The starting point is a multi-million-LOC PHP / Symfony monolith. It is not a legacy mess — it is a clean, domain-driven, modular Symfony codebase, well-architected and actively maintained.** We're peeling its hot paths into Go microservices on top of the [platform](./platform.md) for **resource-efficiency reasons**, not code-quality reasons.
 
-This is not a "rewrite the world" project. It's a **strangler migration with metrics at every step**.
+This is not a "rewrite the world" project. It's a **strangler migration with metrics at every step**, on a codebase that is healthy at the source-code level.
 
 ---
 
-## Why we're doing this
+## What we're migrating from (and why it's not what you think)
 
-The PHP monolith is the historical core of the product. Symfony, MySQL, RabbitMQ, Consul. It carries 15 years of accumulated domain logic. Three things make it expensive at the current scale:
+The PHP monolith is the historical core of the product. Symfony, MySQL, RabbitMQ, Consul. ~15 years of accumulated domain logic — **kept clean**. It's organised by bounded contexts with sharp module boundaries, uses Symfony idioms the way they're meant to be used, has its own test suite, its own coding standards, its own quality bar. The kind of monolith that *should* exist.
+
+**The migration is not about saving the code from itself. The code is fine.** The migration is about three structural costs of running PHP / Symfony at the product's current scale:
 
 1. **Per-worker memory.** 100+ MB of Symfony bootstrap per worker process — a typical PHP daemon sits around ~150 MB resident. Multiply by N workers per machine and the bill adds up quickly.
 2. **Framework overhead on hot paths.** A simple `/metrics` scrape goes through 50–200 ms of Symfony bootstrap. Internal request latency suffers the same way.
 3. **No independent scaling.** Background jobs share the same Symfony bootstrap as HTTP handlers. You can't scale one without paying for the other.
 
-The PHP monolith is good at what it's good at — the rich admin / business UX, deeply Symfony-flavoured domain models, decades of polish. **We're not throwing it away.** We're moving the hot, async and infrastructure-bound parts to Go, and leaving the parts where Symfony still wins.
+The PHP monolith continues to do what it's good at — the rich admin / business UX, deeply Symfony-flavoured domain models, decades of polish. **We're not throwing it away.** We're moving the hot, async and infrastructure-bound parts to Go where the runtime cost is dramatically smaller, and leaving the parts where Symfony still wins.
 
 ---
 
@@ -67,7 +69,7 @@ Each one runs on the [platform library](./platform.md), uses Snowflake IDs, expo
 ## What still lives in PHP — and that's fine
 
 - Rich admin / business UX (specialised flows that Symfony does well).
-- Long-tail legacy logic where the migration cost outweighs the savings.
+- Long-tail business logic where the migration cost outweighs the runtime savings.
 - Some integrations with external systems where the PHP libraries are well-trodden.
 
 The goal is **not** zero PHP. The goal is to put each domain on the language and stack that matches its constraints — and to do it with no flag day and no big-bang rewrite.

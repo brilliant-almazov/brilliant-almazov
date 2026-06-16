@@ -77,13 +77,13 @@ AI gives velocity. Discipline keeps it from rotting:
 | 🚀 Go microservices in production | **6** |
 | 📦 Public OSS libraries shipped | **3** (1 Go, 2 Rust) |
 
-> Numbers are filtered to source files only (`.go .rs .php .ts .tsx .sql .proto .py .yaml .md`) and exclude `vendor/`, `node_modules/`, `.next/`, generated proto, lockfiles. They count my own commits across the legacy PHP monolith *and* the new Go / Rust platform — both are actively maintained while migration is in flight.
+> Numbers are filtered to source files only (`.go .rs .php .ts .tsx .sql .proto .py .yaml .md`) and exclude `vendor/`, `node_modules/`, `.next/`, generated proto, lockfiles. They count my own commits across the existing PHP / Symfony monolith *and* the new Go / Rust platform — both are clean, actively-maintained codebases while migration is in flight.
 
 ### Per-repo activity (top 9 by commits)
 
 | Domain | Commits | Lines (+/−) | Stack |
 |---|---:|---:|---|
-| Legacy PHP monolith (in migration) | **2,806** | +2,020k / −780k | PHP · Symfony · MySQL · Redis · RabbitMQ |
+| PHP / Symfony monolith (clean, domain-driven; partial migration in flight) | **2,806** | +2,020k / −780k | PHP · Symfony · MySQL · Redis · RabbitMQ |
 | Provider execution arm | 1,416 | +493k / −139k | Go · NATS · gRPC · Postgres |
 | Admin & operational control plane | 825 | +404k / −72k | Go BFF · React · Mantine · Refine |
 | Platform foundation (lib + sidecar + registry) | 394 | +197k / −15k | Go · Rust |
