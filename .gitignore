@@ -1,0 +1,9 @@
+# macOS
+.DS_Store
+
+# JetBrains / VS Code
+.idea/
+.vscode/
+
+# Direct AI tooling artefacts
+.claude/
