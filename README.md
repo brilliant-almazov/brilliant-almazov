@@ -13,8 +13,16 @@
 
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=go,rust,php,symfony,ts,react,nextjs,postgres,redis,nats,rabbitmq,kafka,gcp,docker,kubernetes,grafana,prometheus,grpc,linux,git,github" alt="stack" />
+    <img src="https://skillicons.dev/icons?i=go,rust,php,symfony,ts,react,nextjs,postgres,redis,kafka,gcp,docker,kubernetes,grafana,prometheus,linux,git,github" alt="stack" />
   </a>
+</p>
+
+<p align="center">
+  <img src="https://shields.io/badge/NATS-27AAE1?style=flat&logo=natsdotio&logoColor=white" alt="NATS" />
+  <img src="https://shields.io/badge/RabbitMQ-FF6600?style=flat&logo=rabbitmq&logoColor=white" alt="RabbitMQ" />
+  <img src="https://shields.io/badge/gRPC-244c5a?style=flat&logo=google&logoColor=white" alt="gRPC" />
+  <img src="https://shields.io/badge/BigQuery-669DF6?style=flat&logo=googlebigquery&logoColor=white" alt="BigQuery" />
+  <img src="https://shields.io/badge/PostgreSQL-336791?style=flat&logo=postgresql&logoColor=white" alt="PostgreSQL" />
 </p>
 
 <p align="center">
@@ -23,7 +31,7 @@
 </p>
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=brilliant-almazov&theme=tokyonight&hide_border=true" alt="streak" height="160" />
+  <img src="https://streak-stats.demolab.com/?user=brilliant-almazov&theme=tokyonight&hide_border=true" alt="streak" height="160" />
 </p>
 
 ---
