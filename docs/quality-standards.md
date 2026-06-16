@@ -38,14 +38,21 @@ These are not guidelines. They are the rules every commit obeys, in every reposi
 - **One Config per service.** `internal/config/config.go` with nested slices. No per-package `Settings` / `Config` structs.
 - **No local "compat" interfaces.** `httpHandlerCompat`, `moduleCompat`, mirrors of platform types — forbidden. Import the platform contract directly: `var _ platform.X = (*T)(nil)`.
 
-### Testing
+### Testing & coverage
 
+- **Tests on everything.** Every handler, every consumer, every repository, every worker, every conversion / mapping helper. Untested code does not ship.
+- **Minimum 90% line coverage per package, enforced in CI.** Below 90% → CI red → PR blocked. The floor is a hard gate, not a target. A package can earn an exemption only with a documented reason (e.g. trivial generated code).
+- **Per-package coverage floors are configured per repo** and only ratchet **up**, never down. Lowering a floor requires a PR with an explanation.
+- **Coverage badges in every README.** Public via Shields.io / Codecov, private mirrored from CI artefacts. Visible drift → fixed immediately.
 - **`testcontainers-go` for infra-touching tests.** Real Postgres, real NATS, real RabbitMQ — never mocks.
 - **One container per test run.** Not per test. Not per package. One `Run()` boots a Postgres / NATS / RabbitMQ once; all packages share it via env vars. External bootstrap script with `trap EXIT` teardown.
 - **Isolation between tests at the data layer.** Per-test schema / namespace / database name. Pristine setup; `DROP` on cleanup.
 - **`-p 1` for NATS JetStream** (no overlapping subjects across parallel test packages).
 - **Explicit `t.Cleanup` for every JetStream stream / queue created.** No leaks.
 - **No `time.Sleep` for readiness.** Use `WaitingFor` / log-wait / health-check polling.
+- **Integration tests over unit tests for anything that touches a boundary** — database, message bus, HTTP, gRPC. Unit tests are reserved for pure functions.
+- **Table-driven tests by default.** Especially for converters, validators, and anything with a state machine.
+- **No flaky-test culture.** A flaky test is a broken test. Quarantining is allowed for 48 hours max; after that the test is either fixed or deleted. No "rerun and hope".
 
 ### Errors & control flow
 

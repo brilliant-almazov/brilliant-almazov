@@ -27,11 +27,21 @@
 
 <p align="center">
   <img src="https://streak-stats.demolab.com/?user=brilliant-almazov&theme=tokyonight&hide_border=true&date_format=j%20M%5B%20Y%5D" alt="streak" height="180" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=brilliant-almazov&layout=compact&theme=tokyonight&hide=html,css,scss,roff,swift,shell,javascript&exclude_repo=pinger,pinger-dirty,bartender,coursera-react-basics,coursera-html-and-css-in-depth&hide_border=true&langs_count=8" alt="top langs" height="180" />
 </p>
 
-> **Headline numbers (Dec 2025 → Jun 2026, 6.5 months):**
-> 🗂 **22 active repositories** · 📝 **6,300+ commits** · ➕ **~3.4 M lines of source** · ⏱ **~32 commits / day** · 🚀 **6 Go microservices in production** · 📦 **3 public OSS libraries shipped**.
+### 📊 Real language breakdown (private + public, Dec 2025 → Jun 2026)
+
+GitHub's top-langs card only counts *public* repositories — which under-represents PHP (the legacy monolith is private) and over-represents Rust (where the open-source projects live). The honest distribution, measured across **all** active repos by net source LOC, is:
+
+| Language | Share | |
+|---|---:|---|
+| **PHP** (Symfony monolith — still active, in migration) | **~55%** | ![](https://geps.dev/progress/55?dangerColor=8993be&warningColor=8993be&successColor=8993be) |
+| **Go** (platform library, 6 microservices, BFF) | **~30%** | ![](https://geps.dev/progress/30?dangerColor=00add8&warningColor=00add8&successColor=00add8) |
+| **TypeScript / React** (admin UI, BFF clients) | **~8%** | ![](https://geps.dev/progress/8?dangerColor=3178c6&warningColor=3178c6&successColor=3178c6) |
+| **SQL / Proto / YAML / Markdown** (migrations, schemas, IaC, docs) | **~4%** | ![](https://geps.dev/progress/4?dangerColor=336791&warningColor=336791&successColor=336791) |
+| **Rust** (sidecar + OSS exporters) | **~3%** | ![](https://geps.dev/progress/3?dangerColor=dea584&warningColor=dea584&successColor=dea584) |
+
+> **Headline numbers (same period):** 🗂 **22 active repositories** · 📝 **6,300+ commits** · ➕ **~3.4 M lines of source** · ⏱ **~32 commits / day** · 🚀 **6 Go microservices in production** · 📦 **3 public OSS libraries shipped**.
 
 ---
 
@@ -146,7 +156,9 @@ For the *full* rules-of-engagement (Go, frontend, DB, SQL, observability, proces
 - **Interface-driven Go, OOP discipline.** No procedural helpers. Transactions are struct fields, not function arguments. One struct per file. Max 100 lines per file.
 - **`errors.Is` / `errors.As` only.** Never direct comparison or type switch on errors.
 - **No bolt-on observability.** Every driver, pool, client publishes Prometheus counters and histograms per operation.
+- **Tests on everything, 90 % line coverage minimum, enforced by CI.** Floors only ratchet up, never down. Below floor → PR blocked.
 - **Real integration tests.** `testcontainers-go` — one container per test run, namespace-isolated data per test. Never mocks for infrastructure.
+- **No flaky-test culture.** A flaky test is a broken test. 48 h quarantine maximum, then fix or delete.
 - **Schema-first contracts.** Shared proto repo. Migrations forward-only with a `COMMENT ON COLUMN` for every column. Snowflake IDs everywhere — never `SERIAL`, never `UUID` on the hot path.
 - **Zero defaults in shared libraries.** The caller passes every config value. If they forget, the service fails to start — not in production three weeks later.
 - **AI helps good engineers ship faster. AI helps bad engineers ship bad code faster.** The model is best at execution, not judgement. Every architectural decision goes through me. See [`docs/ai-engineering.md`](docs/ai-engineering.md).
