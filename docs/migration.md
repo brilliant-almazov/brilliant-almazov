@@ -52,7 +52,7 @@ Each step is measurable in Grafana — we don't move on until the metrics show t
 
 ## What's already running on Go
 
-Six services in production, replacing slices of the PHP monolith. Without naming the internal repos:
+Six bounded contexts already extracted from the PHP monolith into Go, each running as one or more microservices in production (typically a gRPC server + a worker binary, sometimes with extra outbox / scheduler / sidecar processes). Without naming the internal repos:
 
 - **Content scraping** — receives URL batches via gRPC, dispatches scrape tasks via NATS, applies results, streams content back to PHP via gRPC server-streaming. Owns its Postgres state, no shared DB with the monolith.
 - **Provider execution arm** — receives scrape requests from NATS, talks to external providers (Zyte, Firecrawl, Google SERP, Yandex, DataForSEO, Wordstat), uploads raw payloads to object storage, publishes delivery events back. Independent service, polyglot-friendly bus contract.

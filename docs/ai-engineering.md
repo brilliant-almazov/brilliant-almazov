@@ -74,7 +74,7 @@ AI gives velocity. Discipline keeps it from rotting:
 | ➖ Lines removed | **~1,080,000** |
 | ⏱ Average commit cadence | **~32 commits / day** |
 | ⏱ Average code throughput | **~17,000 lines / day** |
-| 🚀 Go microservices in production | **6** |
+| 🚀 Bounded contexts extracted from the PHP monolith into Go | **6** (each running as one or more Go microservices — server, worker, sometimes more) |
 | 📦 Public OSS libraries shipped | **3** (1 Go, 2 Rust) |
 
 > Numbers are filtered to source files only (`.go .rs .php .ts .tsx .sql .proto .py .yaml .md`) and exclude `vendor/`, `node_modules/`, `.next/`, generated proto, lockfiles. They count my own commits across the existing PHP / Symfony monolith *and* the new Go / Rust platform — both are clean, actively-maintained codebases while migration is in flight.

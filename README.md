@@ -41,7 +41,7 @@ GitHub's top-langs card only counts *public* repositories — which under-repres
 | **SQL / Proto / YAML / Markdown** (migrations, schemas, IaC, docs) | **~4%** | ![](https://geps.dev/progress/4?dangerColor=336791&warningColor=336791&successColor=336791) |
 | **Rust** (sidecar + OSS exporters) | **~3%** | ![](https://geps.dev/progress/3?dangerColor=dea584&warningColor=dea584&successColor=dea584) |
 
-> **Headline numbers (same period):** 🗂 **22 active repositories** · 📝 **6,300+ commits** · ➕ **~3.4 M lines of source** · ⏱ **~32 commits / day** · 🚀 **6 Go microservices in production** · 📦 **3 public OSS libraries shipped**.
+> **Headline numbers (same period):** 🗂 **22 active repositories** · 📝 **6,300+ commits** · ➕ **~3.4 M lines of source** · ⏱ **~32 commits / day** · 🚀 **6 bounded contexts** carved out of the PHP monolith into Go microservices (multiple binaries per domain — servers, workers, runners) · 📦 **3 public OSS libraries shipped**.
 
 ---
 
@@ -54,7 +54,7 @@ The team is small. The team is AI-first. The bar is high.
 - A **Go platform library** every service imports — resource lifecycle, transport wrappers (gRPC, HTTP, Postgres, NATS, RabbitMQ, Redis), Postgres outbox, observability, Snowflake IDs, structured logging, integration-test harness.
 - A **Rust sidecar** — static ~3 MB binary that replaces supervisord inside PHP containers. Drop-in for existing supervisord configs. Replaced a ~50 MB Python runtime per container.
 - A **Go control-plane registry** — single writer, mutual Ed25519 auth, push + pull heartbeat, reverse-proxy admin API across replicas.
-- **Six Go microservices in production** — content scraping, domain-rule mapping, dictionary replica, gateway, AI assistant, admin BFF. Each replaces a slice of the PHP monolith and drops resident memory from **100+ MB per PHP worker (a typical Symfony daemon sits around ~150 MB) to ~20 MB per Go binary**.
+- **Six bounded contexts already carved out of the PHP monolith** — content scraping, domain-rule mapping, dictionary replica, gateway, AI assistant, admin BFF. Each domain ships as **one or more Go microservices** (typically a gRPC server + a worker binary; some have additional outbox / scheduler / sidecar processes). Net effect: resident memory drops from **100+ MB per PHP worker (a typical Symfony daemon sits around ~150 MB) to ~20 MB per Go binary**, and the domain becomes independently scalable, deployable and observable.
 
 > Detail on AI-augmented workflow + per-repo activity: [`docs/ai-engineering.md`](docs/ai-engineering.md).
 
@@ -90,7 +90,7 @@ What I've built and shipped in 6.5 months:
 - A **Go platform library** every new service imports — resource lifecycle, gRPC / HTTP / Postgres / NATS / RabbitMQ / Redis wrappers, Postgres outbox, observability, Snowflake IDs, structured logging, `testcontainers-go` integration-test harness.
 - A **Rust sidecar** (~3 MB static binary) replacing supervisord inside PHP containers — drop-in for existing supervisord configs.
 - A **Go control-plane registry** for cross-replica service discovery and proxied admin API (mutual Ed25519, push + pull heartbeat).
-- **Six Go microservices in production** — content scraping, domain-rule mapping, dictionary replica, gateway, AI assistant, BFF/admin API.
+- **Six bounded contexts already extracted from the PHP monolith** — content scraping, domain-rule mapping, dictionary replica, gateway, AI assistant, BFF/admin API. Each domain runs as one or more Go microservices (server + worker + supporting processes); the total binary count is higher than six.
 - A **Go BFF + React (Mantine + Refine) admin** — the operational control plane for the whole stack.
 - **Stack:** Go · Rust · PHP / Symfony · PostgreSQL · gRPC · NATS · RabbitMQ · Redis · BigQuery · React + TypeScript · Docker · GCP · GitHub Actions · Prometheus + Grafana.
 
