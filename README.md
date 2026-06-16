@@ -199,6 +199,14 @@ For the *full* rules-of-engagement (Go, frontend, DB, SQL, observability, proces
 
 ---
 
+## 🌌 A note that's hard to fit on a CV — but it matters
+
+Twenty years in, I have something that engineers sometimes call **taste**, sometimes **intuition**, sometimes just **feel**. I can usually sense when a design is wrong before I can articulate why — and by the next day I've worked out the argument. I love this craft, deeply enough to be picky about it. I keep learning because every honest hour at the keyboard sharpens that feel a little more.
+
+Strange thing to write on a profile. Earned thing to say.
+
+---
+
 ## 🎓 Education, languages, life
 
 - **Languages — honest version:**
