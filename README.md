@@ -111,7 +111,8 @@ Marketing analytics and SaaS backends. Still active in a smaller capacity alongs
 Built an SEO analytics SaaS from a blank repo into a load-bearing tool for the largest Russian-speaking ecommerce companies. Exited the company in 2021 after 8 years.
 
 - **Wrote ~70 % of the backend personally** in PHP, later Go for hot paths.
-- **Scaled from 30,000 to 1,300,000+ daily queries** — 40× growth handled with no big-bang rewrites, just careful evolution of the data layer.
+- **Scaled query collection from 30,000 to 1,300,000+ daily queries — *per search engine*.** Google, Yandex and other engines each ran at that volume; aggregate daily collection was several times higher. 40× growth handled with no big-bang rewrites, just careful evolution of the data layer.
+- **Built the downstream pipeline that consumed all of that** — ingestion, deduplication, normalisation, classification, scoring, materialised aggregates, retention. The collection volume was only half the system; processing those results into reports and dashboards was the other half, and it was just as engineered.
 - **Clients:** Ozon, M.Video, and other top-tier ecommerce.
 - Built and led the team: 6–7 backend, 2–3 frontend, 1 QA. Hiring, 1:1s, architecture reviews, on-call rota.
 - Owned everything from product strategy with the CEO to migration plans for the database.
