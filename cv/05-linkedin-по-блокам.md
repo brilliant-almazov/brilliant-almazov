@@ -199,18 +199,18 @@ PHP/Symfony · PostgreSQL · Redis · RabbitMQ · Kafka · Kubernetes
 
 `Карандаш на записи SEOWORK.official`
 
-Сейчас там: **CTO, Aug 2018 – Aug 2021**. Это выбрасывает пять лет и со-основательство. Исправить:
+Сейчас там: **CTO, Aug 2018 – Aug 2021**. Даты верные, но текст говорит «after eight years» и спорит с ними, а со-основательство не названо. Исправить:
 
 **Title:**
 ```
 Co-founder & CTO
 ```
 
-**Dates:** `Jun 2013` – `Aug 2021`
+**Dates:** `Aug 2018` – `Aug 2021`
 
 **Description:**
 ```
-Built an SEO analytics SaaS from an empty repository into a load-bearing tool inside the largest Russian-speaking ecommerce companies. Exited in 2021 after eight years.
+Technical co-founder of the spin-out that turned the search analytics platform into a standalone SaaS, alongside the business founder, and CTO through to a successful exit in 2021 — eight years on the same product, from the first line of collection code in 2013 (Webit, then 404 Group) to the exit.
 
 ▸ Wrote ~70% of the backend personally — PHP first, then Go on the hot paths as volume outgrew the original design.
 
@@ -255,11 +255,11 @@ Where I learned that the database is the soul of the product, and that most oper
 
 ---
 
-## 10. Experience — блок 404group: удалить
+## 10. Experience — блок 404 Group: вернуть с правильными датами
 
-`Карандаш на записи 404group → Delete position`
+`Experience → + → Add position`
 
-Это была часть истории Seowork, а не отдельное место. Сейчас она висит четырьмя годами внахлёст с Seowork и читается как небрежность в датах. Десять лет прошло — отдельной ценности не несёт.
+**Решение изменено: запись возвращается, но с датами `Jul 2015 – Jul 2018`.** Внахлёст она висела из-за неверного периода, а не потому, что лишняя: без неё в профиле дыра `Apr 2013 → Aug 2018`. Готовый текст блока — `cv/09-опыт-2013-2018-и-netbynet.md`.
 
 ---
 

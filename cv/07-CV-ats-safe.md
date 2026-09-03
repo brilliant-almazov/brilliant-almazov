@@ -106,11 +106,13 @@ Technologies: PHP, Symfony, PostgreSQL, Redis, RabbitMQ, Apache Kafka, Kubernete
 
 
 Co-founder & Chief Technology Officer
-Seowork — SEO Analytics SaaS | Exited 2021
-Jun 2013 - Aug 2021 (8 years 3 months)
+Seowork — SEO Analytics SaaS | Successful exit 2021
+Aug 2018 - Aug 2021 (3 years 1 month)
 
-Built an SEO analytics SaaS platform from zero into a production system used daily by the
-largest Russian-speaking ecommerce companies. Exited the company in 2021.
+Technical co-founder of the spin-out that turned the search analytics platform into a
+standalone SaaS, alongside the business founder, and CTO through to a successful exit in
+2021. Eight years on the same product in total, from the first line of collection code in
+2013 (Webit, then 404 Group) to the exit.
 
 - Personally authored approximately 70 percent of the backend, in PHP and later Go (Golang)
   on high-throughput paths.
@@ -130,15 +132,62 @@ largest Russian-speaking ecommerce companies. Exited the company in 2021.
 Technologies: PHP, Go (Golang), MySQL, PostgreSQL, Redis, RabbitMQ
 
 
+Head of Development
+404 Group — Search Analytics Platform
+Jul 2015 - Jul 2018 (3 years 1 month)
+
+Ran development on the search analytics product as it moved from internal agency tooling to a
+commercial platform with paying external clients.
+
+- Owned the backend end to end: collection, storage, processing and reporting, including the
+  decision on where the original design had to be replaced rather than patched as data volume
+  grew.
+- Built and led the engineering team: hiring, code review, architecture decisions and release
+  process. These engineers became the founding SEOWORK team.
+- Took the product from an internal utility to a commercial system external companies paid for
+  and used for daily operational decisions, which made the 2018 spin-out possible.
+
+Technologies: PHP, Go (Golang), MySQL, Redis, RabbitMQ
+
+
+Backend Developer, Search Analytics and Internal Tooling
+Webit — Full-Service Digital Agency
+May 2013 - Jun 2015 (2 years 2 months)
+
+Backend developer at a 100-person digital agency (founded 2003, later ranked first among SEO
+agencies in the Ruward Award), working on the in-house tooling used by the agency's own SEO
+department.
+
+- Built the first version of the search-data collection backend: rank and visibility data
+  across Google and Yandex, collected daily across the agency's client portfolio and served to
+  analysts.
+- Replaced manually assembled client reporting with generated reports, removing approximately
+  one analyst-day per client per month.
+- Served large ecommerce brands while still agency tooling, on a model billed on collected
+  data and metered precisely, where an incorrect figure was an invoicing error rather than a
+  cosmetic defect.
+- Established cross-validation between data sources as standard practice before any figure
+  reached a client report.
+- This codebase became the origin of the SEO analytics product later spun out as SEOWORK.
+
+Technologies: PHP, MySQL, Redis
+
+
 Developer, Corporate Reporting & Internal Systems
 NetByNet — National Internet Service Provider
-2005 - Apr 2013 (8 years)
+Sep 2005 - Apr 2013 (8 years)
 
-Progressed over eight years from call-centre operator and field service technician through
-customer-facing and internal technical support into software development.
+Eight years at one company across six roles. Joined a neighbourhood internet provider,
+stayed through its acquisition by NetByNet, one of Russia's largest national providers, and
+progressed into software development.
 
-- Built the corporate financial reporting systems used by the company's business analysts,
-  covering IFRS and RAS reporting and KPI tooling.
+- Night-shift and day-shift telephone support, then field repairs at customer premises,
+  then incident escalation and customer conflict resolution.
+- Network engineering: network-level design and operations, then network engineer.
+- One year in internal technical support, serving the company's own departments.
+- Final eighteen months as a developer: built the corporate reporting the business made
+  decisions on, covering IFRS and RAS financial reporting, revenue reporting and KPI
+  tooling for department heads and the board.
 - Developed custom call-centre software on Asterisk.
 
 Technologies: SQL, PHP, Asterisk

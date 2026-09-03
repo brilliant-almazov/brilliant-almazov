@@ -37,17 +37,21 @@
 
 | Период | Место | Роль |
 |---|---|---|
-| 2005 – Apr 2013 | NetByNet | Developer, corporate reporting & internal systems · 8 лет |
-| Jun 2013 – Aug 2021 | Seowork | **Co-founder & CTO · 8 лет · экзит 2021** |
+| Sep 2005 – Apr 2013 | NetByNet | Developer, corporate reporting & internal systems · 8 лет, шесть ролей |
+| May 2013 – Jun 2015 | Webit | Backend developer — search analytics & internal tooling |
+| Jul 2015 – Jul 2018 | 404 Group | Head of Development — тот же продукт до выделения |
+| Aug 2018 – Aug 2021 | Seowork | **Technical co-founder & CTO · успешный экзит 2021** |
 | Nov 2021 – Aug 2023 | Lenvendo | Senior backend engineer / team lead |
 | Sep 2023 – present | Independent consulting | Data architect & BigQuery · part-time |
 | Dec 2025 – present | Stealth startup (Malta) | Senior backend & platform engineer · contract |
 
-### 404group — в резюме не идёт
+### 404 Group — идёт в резюме (решение изменено)
 
-Это была часть истории Seowork (инвестиционная структура), а не отдельное место работы.
-Прошло десять лет, отдельной ценности не несёт, а в LinkedIn создаёт нахлёст с Seowork.
-**Действие:** удалить из LinkedIn, в CV не добавлять.
+Прежнее решение «удалить как нахлёст» было ошибкой: удалялся не нахлёст, а звено цепочки,
+из-за чего в профиле образовалась дыра `Apr 2013 → Aug 2018` в пять лет и четыре месяца.
+Правильная раскладка — один продукт, три дома: **Webit (2013–2015) → 404 Group (2015–2018)
+→ SEOWORK (2018–2021, успешный экзит)**. Нахлёста нет, «восемь лет» подтверждаются датами.
+Готовые блоки — `cv/09-опыт-2013-2018-и-netbynet.md`.
 
 ### NetByNet — что там было на самом деле
 

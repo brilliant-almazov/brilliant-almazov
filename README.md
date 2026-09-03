@@ -96,9 +96,9 @@ A separate, smaller engagement alongside the role above — the data layer, wher
 ---
 
 ### 🚀 Co-founder &amp; CTO · Seowork
-**Jun 2013 – Aug 2021** · 8 years · SEO analytics SaaS · **exited 2021**
+**Aug 2018 – Aug 2021** · SEO analytics SaaS · **successful exit**
 
-From an empty repository to a load-bearing tool inside the largest Russian-speaking ecommerce companies.
+Technical co-founder of the spin-out that turned the search analytics platform into a standalone SaaS, alongside the business founder, and CTO through to a successful exit in 2021 — eight years on the same product, from the first line of collection code in 2013 to the exit.
 
 - **Wrote ~70% of the backend personally** — PHP first, then Go on the hot paths as volume outgrew the original design.
 - **Scaled collection 40×, from 30,000 to 1,300,000+ queries per day *per search engine*.** Google, Yandex and others each ran at that volume; aggregate collection was several times higher. No big-bang rewrite — the data layer was evolved release by release while the product stayed up.
@@ -108,6 +108,34 @@ From an empty repository to a load-bearing tool inside the largest Russian-speak
 - **Owned the product, not just the stack** — pricing, roadmap and release strategy with the CEO, and the database migration plans nobody else wanted to sign.
 
 **Stack:** PHP · Go · MySQL / PostgreSQL · Redis · RabbitMQ
+
+---
+
+### 🧭 Head of Development · 404 Group
+**Jul 2015 – Jul 2018** · the same product, before the spin-out
+
+Ran development on the search analytics product as it moved from internal agency tooling to a commercial platform with paying external clients.
+
+- **Owned the backend end to end** — collection, storage, processing, reporting — and made the call on where the original design had to be replaced rather than patched as volume grew.
+- **Built and led the engineering team** — hiring, code review, architecture decisions, release process. These were the first engineers of what became the SEOWORK team.
+- **Took the product from an internal utility to something outside companies paid for** and ran daily decisions on — the step that made the 2018 spin-out possible.
+
+**Stack:** PHP · Go · MySQL · Redis · RabbitMQ
+
+---
+
+### 🧩 Backend Developer · Webit
+**May 2013 – Jun 2015** · where the product started
+
+Backend developer at a 100-person full-service digital agency (founded 2003, later ranked first among SEO agencies in the Ruward Award), on the in-house tooling the agency's own SEO department ran on.
+
+- **Built the first version of the search-data collection backend** — rank and visibility data across Google and Yandex, collected daily across the agency's client portfolio, stored and served for analysts rather than for a dashboard demo.
+- **Replaced hand-assembled client reporting with generated reports** — same numbers, without an analyst spending a day per client per month.
+- **Enterprise clients from the start** — even as agency tooling the platform served large ecommerce brands, and it was billed on the data itself, metered precisely. A wrong number was not a cosmetic bug, it was an invoice.
+- **Cross-validation as a habit, not a QA step** — sources checked against each other before anything reached a report. Correctness of data was the product, and it has been the bar in everything I have built since.
+- This codebase is the origin of the product I later co-founded and exited.
+
+**Stack:** PHP · MySQL · Redis
 
 ---
 
@@ -123,11 +151,15 @@ From an empty repository to a load-bearing tool inside the largest Russian-speak
 ---
 
 ### 📞 Developer, Corporate Reporting &amp; Internal Systems · NetByNet
-**2005 – Apr 2013** · 8 years · national ISP
+**Sep 2005 – Apr 2013** · 8 years · six roles · national ISP
 
-Eight years at one company, from the phone to the codebase — call-centre operator, field service, customer-facing and internal technical support, then development.
+Eight years at one company and six roles inside it. Joined a neighbourhood ISP a ten-minute walk from my flat, stayed through its acquisition by NetByNet — one of Russia's largest national providers — and ended up writing the reporting the business ran on.
 
-As a developer I built the **corporate reporting systems the company's business analysts ran on**: IFRS and RAS financial reporting, KPI tooling, and custom call-centre software on Asterisk. Analytics and data have been the through-line since the start of the career, not a recent turn.
+- **Night-shift phone support, then day shift.** Then field repairs at customer premises. Then escalation and customer conflict resolution — the queue where the angry calls end up, and the first role where the outcome depended on judgement rather than a script.
+- **Then network engineering** — network-level design and operations, then network engineer proper. A year of internal technical support after that, where the users were the company's own departments, which is how I learned what the business actually measured.
+- **Final year and a half as a developer**, building the **corporate reporting decisions were made on**: IFRS and RAS financial reporting, revenue reporting, and KPI tooling for department heads and the board. Custom call-centre software on Asterisk on top.
+
+Analytics was not a later turn in my career. The first numbers executives decided on were queries I wrote.
 
 Where I learned that the database is the soul of the product, and that most operational pain is a bad query wearing a costume.
 
