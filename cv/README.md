@@ -185,12 +185,12 @@ PHP/Symfony · PostgreSQL · Redis · RabbitMQ · Kafka · Kubernetes
 
 `Карандаш на записи SEOWORK.official`
 
-Сейчас стоит **CTO, Aug 2018 – Aug 2021** — это выбрасывает пять лет и со-основательство.
+Сейчас стоит **CTO, Aug 2018 – Aug 2021** — даты верные, но текст спорит с ними и не называет со-основательство.
 
-**Title:** `Co-founder & CTO` · **Dates:** `Jun 2013` – `Aug 2021`
+**Title:** `Co-founder & CTO` · **Dates:** `Aug 2018` – `Aug 2021`
 
 ```
-Built an SEO analytics SaaS from an empty repository into a load-bearing tool inside the largest Russian-speaking ecommerce companies. Exited in 2021 after eight years.
+Technical co-founder of the spin-out that turned the search analytics platform into a standalone SaaS, alongside the business founder, and CTO through to a successful exit in 2021 — eight years on the same product, from the first line of collection code in 2013 (Webit, then 404 Group) to the exit.
 
 ▸ Wrote ~70% of the backend personally — PHP first, then Go on the hot paths as volume outgrew the original design.
 
