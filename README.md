@@ -11,7 +11,7 @@ I design distributed systems and build the teams that run them.
 ## In short
 
 - **Built SEOWORK from the first line of code to my exit in 2021** as technical co-founder and CTO: collection scaled 40x to 1.3M+ queries/day per search engine, engineering grew from 1 to 10, enterprise clients included Ozon and M.Video. The platform still runs today.
-- **Now:** founding engineer and platform architect of an early-stage startup in stealth. ~20 Go and Rust services and 100+ production components in under a year, with two engineers.
+- **Now:** founding engineer and platform architect of an early-stage startup in stealth. ~20 Go services and 100+ production components in under a year, with two engineers.
 - **Data is the thread:** from board-level reporting, to high-volume collection pipelines, to a BigQuery redesign that cut a client's bill by up to 10x.
 
 ---
@@ -23,7 +23,6 @@ An early-stage startup in stealth. A well-structured Symfony monolith is being r
 - **Go platform library** every service imports: lifecycle, gRPC/HTTP/Postgres/NATS/RabbitMQ/Redis, transactional outbox, Snowflake IDs, observability, testcontainers harness. New service to production in a day.
 - **~20 microservices in production** across 35+ repositories, each shipping as gRPC server, worker, outbox and scheduler binaries. I design, build, deploy and operate them.
 - **Analytical data layer**: ingestion and transformation pipelines from crawled and third-party sources.
-- **Rust sidecar**: ~3 MB static binary replacing supervisord, ~17x smaller.
 - **Control plane**: service registry with mutual Ed25519 auth; admin with RBAC and audit trail.
 - **Contracts as artefacts**: shared Protocol Buffers repo generating Go and PHP stubs.
 - **Delivery**: CI/CD across 35+ repositories, 90% coverage gates, integration tests on real infrastructure, image-size budgets on every PR.
@@ -32,7 +31,6 @@ An early-stage startup in stealth. A well-structured Symfony monolith is being r
 |---|---|---|
 | Memory per worker | ~150 MB (Symfony) | ~20 MB (Go), ~7x |
 | Container image | 100+ MB | 20–30 MB, 5–10x |
-| Process manager | ~50 MB Python supervisord | ~3 MB Rust, ~17x |
 | Metrics scrape | 50–200 ms | sub-millisecond |
 | New service to prod | ~1 week | 1 day |
 
@@ -41,7 +39,7 @@ An early-stage startup in stealth. A well-structured Symfony monolith is being r
 | Document | What it covers |
 |---|---|
 | [architecture.md](docs/architecture.md) | System map, layers, outbox → NATS |
-| [platform.md](docs/platform.md) | Go library, Rust sidecar, registry, service template |
+| [platform.md](docs/platform.md) | Go library, registry, service template |
 | [migration.md](docs/migration.md) | PHP → Go: reasoning, method, measured savings |
 | [admin-operations.md](docs/admin-operations.md) | Control plane: RBAC, audit, operations workflows |
 | [ai-engineering.md](docs/ai-engineering.md) | How a two-person team ships safely with AI agents |
@@ -74,9 +72,9 @@ Eight years, six roles, ending in the corporate reporting the board relied on.
 
 ## Open source
 
-- [**metrics-bridge-rs**](https://github.com/brilliant-almazov/metrics-bridge-rs) · Rust · Prometheus exporter for PHP metrics in Redis. Sub-millisecond vs 50–200 ms through PHP, 12,500+ RPS.
+- [**metrics-bridge-rs**](https://github.com/brilliant-almazov/metrics-bridge-rs) · Prometheus exporter for PHP metrics in Redis. Sub-millisecond vs 50–200 ms through PHP, 12,500+ RPS.
 - [**pgenum**](https://github.com/brilliant-almazov/pgenum) · Go · Runtime management of PostgreSQL ENUM types, zero dependencies.
-- [**railway-exporter-rs**](https://github.com/brilliant-almazov/railway-exporter-rs) · Rust · Prometheus exporter for Railway.app billing.
+- [**railway-exporter-rs**](https://github.com/brilliant-almazov/railway-exporter-rs) · Prometheus exporter for Railway.app billing.
 
 ---
 

@@ -25,7 +25,6 @@ domain models. Nothing is thrown away.
 |---|---|---|---|
 | Resident memory per worker | 100+ MB (~150 MB typical) | ~20 MB per Go binary | ~7× |
 | Container image | 100+ MB | 20–30 MB | 5–10× |
-| Process-manager footprint | ~50 MB | ~3 MB | ~17× |
 | Metrics scrape latency | 50–200 ms | sub-millisecond | 50–200× |
 | New service to production | ~1 week | 1 day | ~5× |
 

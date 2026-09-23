@@ -71,7 +71,6 @@ independently.
 |---|---|---|
 | Memory per worker | ~150 MB | ~20 MB, ~7× |
 | Container image | 100+ MB | 20–30 MB, 5–10× |
-| Process manager | ~50 MB | ~3 MB, ~17× |
 | Metrics scrape | 50–200 ms | sub-millisecond |
 | New service to production | ~1 week | 1 day |
 
