@@ -80,7 +80,52 @@ Eight years, six roles, ending in the corporate reporting the board relied on.
 
 ## Writing
 
-**Breaking the Monolith** on [dev.to](https://dev.to/anton_brilliantov): migration strategy, service boundaries, zero-downtime cutover, and testing two systems that must agree while one replaces the other.
+Everything is on [dev.to](https://dev.to/anton_brilliantov): one platform, many services, told through real decisions, measured results and a small cast of zoo characters.
+
+### Published
+
+**Breaking the Monolith** · migration strategy, service boundaries, zero-downtime cutover, and testing two systems that must agree while one replaces the other.
+
+<img src="docs/images/writing/monolith-topology.png" alt="Two engines, one database: the monolith and the new service during the cutover" width="100%">
+
+| Part | Article |
+|---|---|
+| 1 | [A 200 OK that saved nothing](https://dev.to/anton_brilliantov/breaking-the-monolith-part-1-a-200-ok-that-saved-nothing-16ef) |
+| 2 | [Who owns a hash function](https://dev.to/anton_brilliantov/breaking-the-monolith-part-2-who-owns-a-hash-function-4h3f) |
+| 3 | [The cascade that timed out](https://dev.to/anton_brilliantov/breaking-the-monolith-part-3-the-cascade-that-timed-out-43pa) |
+| 4 | [Flipping the master live](https://dev.to/anton_brilliantov/breaking-the-monolith-part-4-flipping-the-master-live-2kn9) |
+| 6 | [Most "we need a saga" is really "we need idempotency"](https://dev.to/anton_brilliantov/breaking-the-monolith-part-6-most-we-need-a-saga-is-really-we-need-idempotency-2894) |
+| 15 | [Two rule engines, one truth](https://dev.to/anton_brilliantov/breaking-the-monolith-part-15-two-rule-engines-one-truth-4mhb) |
+
+**Snowflake IDs** · [Why int8 Snowflake and never UUID](https://dev.to/anton_brilliantov/snowflake-ids-part-1-why-int8-snowflake-and-never-uuid-1nb8)
+
+<img src="docs/images/writing/snowflake-bits.png" alt="Bits of a Snowflake ID" width="70%">
+
+### Coming next
+
+A planet of settlements: every service is a settlement, the monolith is a walled city, billing is a gold vault, permissions is a citadel, the gateway is a ring portal and the message bus is the road between them. A keeper writes the plan; settlements are printed from it.
+
+<img src="docs/images/writing/zoo-planet.png" alt="The planet of settlements seen from above" width="100%">
+
+| Series | What it is about |
+|---|---|
+| **Zoo keeping, built in** | what a platform gives every service for free: archives, migrations, connections, settings, every door that must open, your own layout |
+| **Cheap hypotheses for acceptance** | we forked an open-source test runner: declarative scenarios only, a run that writes its own report, only real problems in the problems file |
+| **A PR body for every role** | one pull request, many readers: the service, the architecture, the platform, acceptance and the articles each get their own form |
+| **Cutting the monolith small** | the walled city shrinks, villages grow, and the database slowly turns from a rhino into an elephant |
+
+<p>
+<img src="docs/images/writing/venom-fork.png" alt="We forked the test runner" width="49%">
+<img src="docs/images/writing/pr-body.png" alt="One story, many readers" width="49%">
+</p>
+
+### The story so far
+
+Six seasons ahead, one character arc per resident: the database grows from a rhino into an elephant, acceptance collects medals, billing climbs levels, bugs leave a mechanism behind every scar.
+
+<img src="docs/images/writing/story-map.png" alt="The story so far: six seasons on one road" width="100%">
+
+<img src="docs/images/writing/arcs.png" alt="How the characters grow" width="100%">
 
 ---
 
