@@ -86,7 +86,7 @@ Everything is on [dev.to](https://dev.to/anton_brilliantov): one platform, many 
 
 **Breaking the Monolith** · migration strategy, service boundaries, zero-downtime cutover, and testing two systems that must agree while one replaces the other.
 
-<img src="docs/images/writing/monolith-topology.png" alt="Two engines, one database: the monolith and the new service during the cutover" width="100%">
+<img src="docs/images/writing/monolith-topology.webp" alt="Two engines, one database: the monolith and the new service during the cutover" width="100%">
 
 | Part | Article |
 |---|---|
@@ -99,13 +99,13 @@ Everything is on [dev.to](https://dev.to/anton_brilliantov): one platform, many 
 
 **Snowflake IDs** · [Why int8 Snowflake and never UUID](https://dev.to/anton_brilliantov/snowflake-ids-part-1-why-int8-snowflake-and-never-uuid-1nb8)
 
-<img src="docs/images/writing/snowflake-bits.png" alt="Bits of a Snowflake ID" width="70%">
+<img src="docs/images/writing/snowflake-bits.webp" alt="Bits of a Snowflake ID" width="70%">
 
 ### Coming next
 
 A planet of settlements: every service is a settlement, the monolith is a walled city, billing is a gold vault, permissions is a citadel, the gateway is a ring portal and the message bus is the road between them. A keeper writes the plan; settlements are printed from it.
 
-<img src="docs/images/writing/zoo-planet.png" alt="The planet of settlements seen from above" width="100%">
+<img src="docs/images/writing/zoo-planet.webp" alt="The planet of settlements seen from above" width="100%">
 
 | Series | What it is about |
 |---|---|
@@ -115,17 +115,17 @@ A planet of settlements: every service is a settlement, the monolith is a walled
 | **Cutting the monolith small** | the walled city shrinks, villages grow, and the database slowly turns from a rhino into an elephant |
 
 <p>
-<img src="docs/images/writing/venom-fork.png" alt="We forked the test runner" width="49%">
-<img src="docs/images/writing/pr-body.png" alt="One story, many readers" width="49%">
+<img src="docs/images/writing/venom-fork.webp" alt="We forked the test runner" width="49%">
+<img src="docs/images/writing/pr-body.webp" alt="One story, many readers" width="49%">
 </p>
 
 ### The story so far
 
 Six seasons ahead, one character arc per resident: the database grows from a rhino into an elephant, acceptance collects medals, billing climbs levels, bugs leave a mechanism behind every scar.
 
-<img src="docs/images/writing/story-map.png" alt="The story so far: six seasons on one road" width="100%">
+<img src="docs/images/writing/story-map.webp" alt="The story so far: six seasons on one road" width="100%">
 
-<img src="docs/images/writing/arcs.png" alt="How the characters grow" width="100%">
+<img src="docs/images/writing/arcs.webp" alt="How the characters grow" width="100%">
 
 ---
 
