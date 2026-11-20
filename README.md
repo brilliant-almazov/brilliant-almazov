@@ -1,10 +1,21 @@
+<a href="https://brilliant-almazov.com/en/"><img src="docs/images/site/hero-planet.webp" alt="Monolith City: settlements, roads of letters and the portal under a starry sky" width="100%"></a>
+
 # Anton Brilliantov
+
+### 🌐 [brilliant-almazov.com](https://brilliant-almazov.com/en/)
 
 **Distributed Systems Architect · Engineering Leader · Ex-CTO & Co-founder (SaaS)**
 I design distributed systems and build the teams that run them.
 
 📍 Ramat Gan, Israel · Open to architecture, platform, data-platform and engineering leadership roles
-✉️ brilliantov.anton@gmail.com · 💼 [LinkedIn](https://www.linkedin.com/in/anton-brilliantov) · ✍️ [dev.to](https://dev.to/anton_brilliantov)
+🌐 [Site](https://brilliant-almazov.com/en/) · ✉️ brilliantov.anton@gmail.com · 💼 [LinkedIn](https://www.linkedin.com/in/anton-brilliantov) · ✍️ [dev.to](https://dev.to/anton_brilliantov) · 🐙 [GitHub](https://github.com/brilliant-almazov)
+
+<p>
+<a href="https://brilliant-almazov.com/en/"><img src="https://img.shields.io/badge/site-brilliant--almazov.com-2f6f8f?style=flat-square" alt="Site"></a>
+<a href="#writing"><img src="https://img.shields.io/badge/writing-dev.to-3b4a5a?style=flat-square" alt="Writing"></a>
+<a href="#monolith-city"><img src="https://img.shields.io/badge/world-Monolith%20City-6b7f3a?style=flat-square" alt="Monolith City"></a>
+<a href="#the-keepers-family"><img src="https://img.shields.io/badge/cast-the%20Keeper's%20family-8a6a3a?style=flat-square" alt="The Keeper's family"></a>
+</p>
 
 ---
 
@@ -80,52 +91,80 @@ Eight years, six roles, ending in the corporate reporting the board relied on.
 
 ## Writing
 
-Everything is on [dev.to](https://dev.to/anton_brilliantov): one platform, many services, told through real decisions, measured results and a small cast of zoo characters.
+Articles by a software engineer, about one idea at a time: real decisions, told through a small cast of characters. Read them on [dev.to](https://dev.to/anton_brilliantov); the world, the map and the cast live on [brilliant-almazov.com](https://brilliant-almazov.com/en/).
 
-### Published
+### Live now
 
-**Breaking the Monolith** · migration strategy, service boundaries, zero-downtime cutover, and testing two systems that must agree while one replaces the other.
+**Breaking the Monolith** · how a walled city is taken apart district by district without stopping it.
 
 <img src="docs/images/writing/monolith-topology.webp" alt="Two engines, one database: the monolith and the new service during the cutover" width="100%">
 
 | Part | Article |
 |---|---|
 | 1 | [A 200 OK that saved nothing](https://dev.to/anton_brilliantov/breaking-the-monolith-part-1-a-200-ok-that-saved-nothing-16ef) |
+| 1.5 | [Two rule engines, one truth](https://dev.to/anton_brilliantov/breaking-the-monolith-part-15-two-rule-engines-one-truth-4mhb) |
 | 2 | [Who owns a hash function](https://dev.to/anton_brilliantov/breaking-the-monolith-part-2-who-owns-a-hash-function-4h3f) |
 | 3 | [The cascade that timed out](https://dev.to/anton_brilliantov/breaking-the-monolith-part-3-the-cascade-that-timed-out-43pa) |
 | 4 | [Flipping the master live](https://dev.to/anton_brilliantov/breaking-the-monolith-part-4-flipping-the-master-live-2kn9) |
 | 6 | [Most "we need a saga" is really "we need idempotency"](https://dev.to/anton_brilliantov/breaking-the-monolith-part-6-most-we-need-a-saga-is-really-we-need-idempotency-2894) |
-| 15 | [Two rule engines, one truth](https://dev.to/anton_brilliantov/breaking-the-monolith-part-15-two-rule-engines-one-truth-4mhb) |
 
-**Snowflake IDs** · [Why int8 Snowflake and never UUID](https://dev.to/anton_brilliantov/snowflake-ids-part-1-why-int8-snowflake-and-never-uuid-1nb8)
+**Snowflake IDs** · [Part 1: Why int8 + Snowflake, and never UUID](https://dev.to/anton_brilliantov/snowflake-ids-part-1-why-int8-snowflake-and-never-uuid-1nb8)
 
 <img src="docs/images/writing/snowflake-bits.webp" alt="Bits of a Snowflake ID" width="70%">
 
-### Coming next
+### Series written
 
-A planet of settlements: every service is a settlement, the monolith is a walled city, billing is a gold vault, permissions is a citadel, the gateway is a ring portal and the message bus is the road between them. A keeper writes the plan; settlements are printed from it.
+Eleven series, each a short run of conceptual articles. New parts appear on [dev.to](https://dev.to/anton_brilliantov) and on [the site](https://brilliant-almazov.com/en/).
 
-<img src="docs/images/writing/zoo-planet.webp" alt="The planet of settlements seen from above" width="100%">
-
-| Series | What it is about |
-|---|---|
-| **Zoo keeping, built in** | what a platform gives every service for free: archives, migrations, connections, settings, every door that must open, your own layout |
-| **Cheap hypotheses for acceptance** | we forked an open-source test runner: declarative scenarios only, a run that writes its own report, only real problems in the problems file |
-| **A PR body for every role** | one pull request, many readers: the service, the architecture, the platform, acceptance and the articles each get their own form |
-| **Cutting the monolith small** | the walled city shrinks, villages grow, and the database slowly turns from a rhino into an elephant |
+| | Series | | Series |
+|---|---|---|---|
+| 🧱 | Breaking the Monolith | ❄️ | Snowflake IDs |
+| 🏭 | Platform and generation | 🤝 | Working with agents |
+| 🧰 | Operations out of the box | 🧬 | Generics in Go |
+| 📜 | From requirement to contract | 🔗 | Services and commitments |
+| 🗝️ | Access, tracing, rollout | 🕳️ | Why there is no result |
+| 🧪 | Testing production with an executor | | |
 
 <p>
 <img src="docs/images/writing/venom-fork.webp" alt="We forked the test runner" width="49%">
 <img src="docs/images/writing/pr-body.webp" alt="One story, many readers" width="49%">
 </p>
 
-### The story so far
+---
 
-Six seasons ahead, one character arc per resident: the database grows from a rhino into an elephant, acceptance collects medals, billing climbs levels, bugs leave a mechanism behind every scar.
+## Monolith City
+
+<a href="https://brilliant-almazov.com/en/game/"><img src="docs/images/writing/zoo-planet.webp" alt="The planet of settlements seen from above" width="100%"></a>
+
+The world of the series. A planet of settlements: in the middle stands a monolith city, broken into districts, and every district is a microservice that keepers look after. Roads carry letters between them; the stars overhead are other people's systems.
+
+- 🗺️ **[Game story](https://brilliant-almazov.com/en/game/)**: the interactive map of the planet.
+- 📅 **[Seasons S1–S6](https://brilliant-almazov.com/en/game/seasons/)**: the story season by season, one arc per resident.
+- 🏙️ **[Monolith City](https://brilliant-almazov.com/en/monolith/)**: the city itself, district by district.
 
 <img src="docs/images/writing/story-map.webp" alt="The story so far: six seasons on one road" width="100%">
 
 <img src="docs/images/writing/arcs.webp" alt="How the characters grow" width="100%">
+
+---
+
+## The Keeper's family
+
+<a href="https://brilliant-almazov.com/en/game/family/"><img src="docs/images/family/portrait.webp" alt="The Keeper's family at the portal, with the animals of the city" width="100%"></a>
+
+The recurring cast of the articles. They meet the animals of the city at the portal and show up whenever a story needs a human view. All drawings are from [the site](https://brilliant-almazov.com/en/game/family/).
+
+**The Keeper** · the author: long grey hair in a thick braid, round tortoiseshell glasses, a salt-and-pepper beard.
+
+<table>
+<tr>
+<td align="center" width="20%"><img src="docs/images/family/sveta.webp" alt="Sveta" width="100%"><br><b>Sveta</b><br>the Keeper's wife</td>
+<td align="center" width="20%"><img src="docs/images/family/lev.webp" alt="Lev" width="100%"><br><b>Lev</b><br>the Keeper's son</td>
+<td align="center" width="20%"><img src="docs/images/family/nova.webp" alt="Nova" width="100%"><br><b>Nova</b><br>the Keeper's daughter</td>
+<td align="center" width="20%"><img src="docs/images/family/misha.webp" alt="Grandpa Misha" width="100%"><br><b>Grandpa Misha</b><br>big grey walrus moustache</td>
+<td align="center" width="20%"><img src="docs/images/family/lyolya.webp" alt="Lyolya" width="100%"><br><b>Lyolya</b><br>a fluffy tuxedo cat</td>
+</tr>
+</table>
 
 ---
 
