@@ -97,7 +97,7 @@ Articles by a software engineer, about one idea at a time: real decisions, told 
 
 **Breaking the Monolith** · how a walled city is taken apart district by district without stopping it.
 
-<img src="docs/images/writing/monolith-topology.webp" alt="Two engines, one database: the monolith and the new service during the cutover" width="100%">
+<a href="https://dev.to/anton_brilliantov/breaking-the-monolith-part-1-a-200-ok-that-saved-nothing-16ef"><img src="docs/images/writing/monolith-topology.webp" alt="Two engines, one database: the monolith and the new service during the cutover" width="100%"></a>
 
 | Part | Article |
 |---|---|
@@ -110,7 +110,7 @@ Articles by a software engineer, about one idea at a time: real decisions, told 
 
 **Snowflake IDs** · [Part 1: Why int8 + Snowflake, and never UUID](https://dev.to/anton_brilliantov/snowflake-ids-part-1-why-int8-snowflake-and-never-uuid-1nb8)
 
-<img src="docs/images/writing/snowflake-bits.webp" alt="Bits of a Snowflake ID" width="70%">
+<a href="https://dev.to/anton_brilliantov/snowflake-ids-part-1-why-int8-snowflake-and-never-uuid-1nb8"><img src="docs/images/writing/snowflake-bits.webp" alt="Bits of a Snowflake ID" width="70%"></a>
 
 ### Series written
 
@@ -125,9 +125,44 @@ Eleven series, each a short run of conceptual articles. New parts appear on [dev
 | 🗝️ | Access, tracing, rollout | 🕳️ | Why there is no result |
 | 🧪 | Testing production with an executor | | |
 
+### Covers from the shelf
+
+<table>
+<tr>
+<td width="50%"><a href="https://brilliant-almazov.com/en/"><img src="docs/images/writing/covers/token-at-the-edge.webp" alt="Access, tracing, rollout: the token stops at the edge" width="100%"></a></td>
+<td width="50%"><a href="https://brilliant-almazov.com/en/"><img src="docs/images/writing/covers/contract-is-a-proto-file.webp" alt="From requirement to contract: the contract is a .proto file" width="100%"></a></td>
+</tr>
+<tr>
+<td width="50%"><a href="https://brilliant-almazov.com/en/"><img src="docs/images/writing/covers/ownership-is-a-field.webp" alt="Services and commitments: ownership is a field, not an agreement" width="100%"></a></td>
+<td width="50%"><a href="https://brilliant-almazov.com/en/"><img src="docs/images/writing/covers/accountability-stays-human.webp" alt="From requirement to contract: accountability stays human" width="100%"></a></td>
+</tr>
+<tr>
+<td colspan="2"><a href="https://brilliant-almazov.com/en/"><img src="docs/images/writing/covers/planet-on-a-laptop.webp" alt="A planet on a laptop: continents, providers, datacenters and zones declared once" width="100%"></a></td>
+</tr>
+</table>
+
+### In motion
+
+Every article explains its idea with a small moving picture.
+
+<table>
+<tr>
+<td width="50%" align="center"><a href="https://brilliant-almazov.com/en/"><img src="docs/images/writing/motion/quorum.gif" alt="Lose one zone, keep the majority" width="100%"></a><br><sub>Lose one zone, keep the majority</sub></td>
+<td width="50%" align="center"><a href="https://brilliant-almazov.com/en/"><img src="docs/images/writing/motion/link-cut.gif" alt="Healing a site keeps the link cut" width="100%"></a><br><sub>Healing a site keeps the link cut</sub></td>
+</tr>
+<tr>
+<td width="50%" align="center"><a href="https://brilliant-almazov.com/en/"><img src="docs/images/writing/motion/span-zone.gif" alt="Each span carries its zone" width="100%"></a><br><sub>Each span carries its zone</sub></td>
+<td width="50%" align="center"><a href="https://brilliant-almazov.com/en/"><img src="docs/images/writing/motion/three-builds.gif" alt="What we own fell; the network never moved" width="100%"></a><br><sub>What we own fell; the network never moved</sub></td>
+</tr>
+<tr>
+<td width="50%" align="center"><a href="https://brilliant-almazov.com/en/"><img src="docs/images/writing/motion/push-to-plan.gif" alt="A push, the stand, a row, the plan" width="100%"></a><br><sub>A push, the stand, a row, the plan</sub></td>
+<td width="50%" align="center"><a href="https://brilliant-almazov.com/en/"><img src="docs/images/writing/motion/parcel-walk.gif" alt="The parcel walks the chain and back" width="100%"></a><br><sub>The parcel walks the chain and back</sub></td>
+</tr>
+</table>
+
 <p>
-<img src="docs/images/writing/venom-fork.webp" alt="We forked the test runner" width="49%">
-<img src="docs/images/writing/pr-body.webp" alt="One story, many readers" width="49%">
+<a href="https://brilliant-almazov.com/en/"><img src="docs/images/writing/venom-fork.webp" alt="We forked the test runner" width="49%"></a>
+<a href="https://brilliant-almazov.com/en/"><img src="docs/images/writing/pr-body.webp" alt="One story, many readers" width="49%"></a>
 </p>
 
 ---
@@ -142,9 +177,32 @@ The world of the series. A planet of settlements: in the middle stands a monolit
 - 📅 **[Seasons S1–S6](https://brilliant-almazov.com/en/game/seasons/)**: the story season by season, one arc per resident.
 - 🏙️ **[Monolith City](https://brilliant-almazov.com/en/monolith/)**: the city itself, district by district.
 
-<img src="docs/images/writing/story-map.webp" alt="The story so far: six seasons on one road" width="100%">
+<a href="https://brilliant-almazov.com/en/game/seasons/"><img src="docs/images/writing/story-map.webp" alt="The story so far: six seasons on one road" width="100%"></a>
 
-<img src="docs/images/writing/arcs.webp" alt="How the characters grow" width="100%">
+<a href="https://brilliant-almazov.com/en/game/seasons/"><img src="docs/images/writing/arcs.webp" alt="How the characters grow" width="100%"></a>
+
+### Life in the city
+
+The residents explain the hard parts their own way: a queue is a line at the bakery, a shared database is a dragon everybody still borrows from, and one grumpy service makes the whole chain grumpy.
+
+<a href="https://brilliant-almazov.com/en/game/heroes/"><img src="docs/images/world/zoo.webp" alt="The residents of the city at the enclosure" width="100%"></a>
+
+<table>
+<tr>
+<td width="50%" align="center"><a href="https://brilliant-almazov.com/en/game/heroes/"><img src="docs/images/world/bakery-queue.gif" alt="A queue is a line at the bakery" width="100%"></a><br><sub>A queue is a line at the bakery</sub></td>
+<td width="50%" align="center"><a href="https://brilliant-almazov.com/en/game/heroes/"><img src="docs/images/world/spike.gif" alt="A spike, as Pickle sees it" width="100%"></a><br><sub>A spike, as Pickle sees it</sub></td>
+</tr>
+<tr>
+<td width="50%" align="center"><a href="https://brilliant-almazov.com/en/game/heroes/"><img src="docs/images/world/borrow-from-the-dragon.webp" alt="Everybody still borrows from the dragon" width="100%"></a><br><sub>Everybody still borrows from the dragon</sub></td>
+<td width="50%" align="center"><a href="https://brilliant-almazov.com/en/game/heroes/"><img src="docs/images/world/one-job-two-owners.webp" alt="One job, two owners" width="100%"></a><br><sub>One job, two owners</sub></td>
+</tr>
+<tr>
+<td width="50%" align="center"><a href="https://brilliant-almazov.com/en/game/heroes/"><img src="docs/images/world/grumpy-chain.webp" alt="One grumpy service, a grumpy chain" width="100%"></a><br><sub>One grumpy service, a grumpy chain</sub></td>
+<td width="50%" align="center"><a href="https://brilliant-almazov.com/en/game/heroes/"><img src="docs/images/world/courier-comic.webp" alt="The courier sniffs every lamppost" width="100%"></a><br><sub>The courier sniffs every lamppost</sub></td>
+</tr>
+</table>
+
+<a href="https://brilliant-almazov.com/en/game/heroes/"><img src="docs/images/world/race.webp" alt="The hare and the tortoise race to the flag" width="100%"></a>
 
 ---
 
@@ -158,11 +216,11 @@ The recurring cast of the articles. They meet the animals of the city at the por
 
 <table>
 <tr>
-<td align="center" width="20%"><img src="docs/images/family/sveta.webp" alt="Sveta" width="100%"><br><b>Sveta</b><br>the Keeper's wife</td>
-<td align="center" width="20%"><img src="docs/images/family/lev.webp" alt="Lev" width="100%"><br><b>Lev</b><br>the Keeper's son</td>
-<td align="center" width="20%"><img src="docs/images/family/nova.webp" alt="Nova" width="100%"><br><b>Nova</b><br>the Keeper's daughter</td>
-<td align="center" width="20%"><img src="docs/images/family/misha.webp" alt="Grandpa Misha" width="100%"><br><b>Grandpa Misha</b><br>big grey walrus moustache</td>
-<td align="center" width="20%"><img src="docs/images/family/lyolya.webp" alt="Lyolya" width="100%"><br><b>Lyolya</b><br>a fluffy tuxedo cat</td>
+<td align="center" width="20%"><a href="https://brilliant-almazov.com/en/game/family/"><img src="docs/images/family/sveta.webp" alt="Sveta" width="100%"></a><br><b>Sveta</b><br>the Keeper's wife</td>
+<td align="center" width="20%"><a href="https://brilliant-almazov.com/en/game/family/"><img src="docs/images/family/lev.webp" alt="Lev" width="100%"></a><br><b>Lev</b><br>the Keeper's son</td>
+<td align="center" width="20%"><a href="https://brilliant-almazov.com/en/game/family/"><img src="docs/images/family/nova.webp" alt="Nova" width="100%"></a><br><b>Nova</b><br>the Keeper's daughter</td>
+<td align="center" width="20%"><a href="https://brilliant-almazov.com/en/game/family/"><img src="docs/images/family/misha.webp" alt="Grandpa Misha" width="100%"></a><br><b>Grandpa Misha</b><br>big grey walrus moustache</td>
+<td align="center" width="20%"><a href="https://brilliant-almazov.com/en/game/family/"><img src="docs/images/family/lyolya.webp" alt="Lyolya" width="100%"></a><br><b>Lyolya</b><br>a fluffy tuxedo cat</td>
 </tr>
 </table>
 
